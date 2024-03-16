@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/main.css" id="lightTheme">
+    <link rel="stylesheet" type="text/css" href="/main.dark.css" id="darkTheme" disabled>
+    <meta charset="UTF-8">
+    <title> Countact Messi </title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main">Main </a> </li>
+                <li><a href="/testimonies">Testimonials</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="admin/contactlog">Contact log </a></li>
+                <li><a href="#" id="themeButton">Dark Mode</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <h1>How to contact messi </h1>
+    <div class="contact">
+        <form action="/contact" method="POST">
+            <label for="name"> Name</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email"> Email</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="date"> Date</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <label for="contactMethod ">Contact Method</label>
+            <select id="contactMethod" name="contactMethod">
+                <option value="call"> call messi </option>
+                <option value="text"> text messi </option>
+                <option value="email"> email messi </option>
+            </select>
+            <br>
+            <span style="display: flex; align-items: center;margin-top: 10px;">
+                <input type="checkbox" id="checkbox" name="checkbox" style="margin:0;margin-right: 10px;">
+                <label for="checkbox" style="margin:0">checkbox</label>
+            </span>
+            <br>
+            <p id="calculationResult" style="display: none;"></p>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+<script src="/js/main.js"></script>
+<script src="/js/contact.js"></script>
+</html>
